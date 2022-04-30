@@ -14,7 +14,6 @@ const Edit = ({ add, submittingStatus }) => {
     setTime(e.target.value);
   }
   function addItem() {
-    submittingStatus.current = true;
     add(function (prevData) {
       return [
         {
