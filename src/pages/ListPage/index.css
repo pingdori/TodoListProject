@@ -1,0 +1,121 @@
+
+img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: -1;
+    width: 100%;
+    filter: blur(1px);
+}
+.app {
+  
+    max-width: 45%;
+    padding: 20px;
+    /* position:fixed;
+    top: 5%;
+    left: 5%;
+    right: 5%; */
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: auto;
+    border-radius:10px;
+
+  }
+  
+  h1{
+    color: #fff;
+    font-family: Georgia;
+    font-weight: 800;
+    letter-spacing:5px;
+    font-size: 50px;
+    
+
+  }
+  
+  p{
+    color: #fff;
+    font-family: Georgia,PMingLiU;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  input {
+    width: 100%;
+    height: 60px;
+    border-radius:5px;
+    font-family: Georgia,PMingLiU;
+    font-size:25px;
+    letter-spacing:2px;
+    padding-left: 5px;
+    border: none;
+  }
+  input[type=date]::-webkit-calendar-picker-indicator {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    padding-left: 10px;
+  }
+  input[type=time]::-webkit-calendar-picker-indicator {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    padding-left: 10px;
+  }
+  .add {
+    margin-top: 20px;
+    letter-spacing:2px;
+    background-color: #747171;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    font-family: Georgia;
+    font-size: 25px;
+    border-radius:50px;
+  }
+  .add:hover{
+    background-color: #3d3b3b;
+  }
+  .list {
+    padding-top: 20px;
+  }
+  
+  .item {
+    color: #fff;
+    width: 100%;
+    border-bottom: 0.5px solid #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .remove {
+    border: 0;
+    background-color: rgb(172, 83, 83);
+    color: #fff;
+    padding: 10px;
+    font-family: Georgia;
+    border-radius:50px;
+    letter-spacing:2px;
+    font-size: 25px;
+  }
+  .remove:hover {
+    background-color: rgb(83, 172, 128);
+  }
+  @media (max-width: 1200px) {
+  .app {
+  
+      max-width: 90%;}
+  
+  img{
+    height: 100%;
+    object-fit: cover;
+  }
+  }
