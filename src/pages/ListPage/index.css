@@ -5,7 +5,10 @@ img{
     left: 0;
     
     z-index: -1;
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* min-height: 100%; */
     filter: blur(1px);
 }
 .app {
@@ -109,8 +112,32 @@ img{
   .remove:hover {
     background-color: rgb(83, 172, 128);
   }
+  .listLink {
+    
+    padding: 20px;
+    box-sizing: border-box;
+    /* margin-left: 86%; */
+    border-radius:10px;
+    max-width: 45%;
+  }
+  .homepage{
+    margin-top: 20px;
+    letter-spacing:2px;
+    background-color: #747171;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-family: Georgia;
+    font-size: 25px;
+    border-radius:50px;
+  }
+  .homepage:hover {
+    background-color: #3d3b3b;
+  }
   @media (max-width: 1200px) {
-  .app {
+  .app,.homepage {
   
       max-width: 90%;}
   

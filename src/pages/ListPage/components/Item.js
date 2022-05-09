@@ -1,14 +1,22 @@
-const Item = ({ id, note, date, time, deleteData }) => {
+import React, { useContext } from "react";
+import { contextData } from "..";
+import { delDb } from "../../../utils/firebase";
+const Item = ({ id, note }) => {
+  const data = useContext(contextData);
+
   function deleteItem() {
-    deleteData(function (prev) {
-      return prev.filter((item) => item.id !== id);
+    data.setData((prev) => {
+      const delData = prev.filter((item) => {
+        return item.id !== id;
+      });
+      return delData;
     });
+    delDb(id);
   }
   return (
     <div className="item">
-      <div>
+      <div id={id}>
         <p>{note}</p>
-        <p>{`${date} ${time}`}</p>
       </div>
       <button onClick={deleteItem} className="remove">
         Delete

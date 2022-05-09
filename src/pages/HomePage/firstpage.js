@@ -1,10 +1,10 @@
 import React from "react";
-import Title from "./components/Title.js";
+import Clock from "./components/Clock.js";
 import "./firstpage.css";
 const Firstpage = function () {
   return (
     <div className="home">
-      <Title />
+      <Clock />
     </div>
   );
 };
